@@ -1,0 +1,18 @@
+name        : xineramaproto
+version     : 1.2.1
+release     : 4
+source      :
+    - http://xorg.freedesktop.org/releases/individual/proto/xineramaproto-1.2.1.tar.gz : d99e121edf7b310008d7371ac5dbe3aa2810996d476b754dc78477cc26e5e7c1
+license     :
+    - MIT
+summary     : X Xinerama Extension
+component   : xorg.proto
+patterns    : /
+description : |
+    This is an X extension that allows multiple physical screens controlled by a single X server to appear as a single screen.
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install
